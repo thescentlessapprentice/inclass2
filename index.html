@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -17,31 +17,24 @@
 
 	</div>
 
-	<script type="text/javascript">
+	<script>
 
-
-		function checkLocation() {
-			
+		function checkLocation() { 
 			var xPos = event.clientX; 
 			var yPos = event.clientY;
 
-			
-
-			if (xPos < 250 && yPos < 250)
+			if (xPos < 250 && yPos < 250) 
 			{
 				console.log("Top Left");
-
 				document.getElementById("topleft"). style.display = "block";
 				document.getElementById("topright"). style.display = "none";
 				document.getElementById("bottomleft"). style.display = "none";
 				document.getElementById("bottomright"). style.display = "none";
 			}
 
-
 			else if (xPos > 250 && yPos < 250) 
 			{
 				console.log("Top Right");
-
 				document.getElementById("topleft"). style.display = "none";
 				document.getElementById("topright"). style.display = "block";
 				document.getElementById("bottomleft"). style.display = "none";
@@ -49,32 +42,25 @@
 
 			}
 
-
-			else if (xPos < 250 && yPos > 250)
+			else if (xPos < 250 && yPos > 250) 
 			{
 				console.log("Bottom Left");
-
 				document.getElementById("topleft"). style.display = "none";
 				document.getElementById("topright"). style.display = "none";
 				document.getElementById("bottomleft"). style.display = "block"
 				document.getElementById("bottomright"). style.display = "none";
 			}
 
-
 			else if(xPos > 250 && yPos > 250)
 			{
 				console.log("Bottom Right");
-
 				document.getElementById("topleft"). style.display = "none";
 				document.getElementById("topright"). style.display = "none";
 				document.getElementById("bottomleft"). style.display = "none";
 				document.getElementById("bottomright"). style.display = "block";
 			}
 
-
-
-
-
 		}
 	</script>
+
 </body>
